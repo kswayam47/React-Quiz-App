@@ -5,7 +5,7 @@ const Header = () => {
     <>
       <nav className="flex justify-between items-center w-full p-4 " 
            style={{
-             background: 'linear-gradient(90deg, #064635, #4F091D)',
+             background: 'linear-gradient(135deg, #12032d, #000000);'
            }}>
         <div className="flex items-center space-x-2">
           <img className="h-12 w-12 rounded-full" src="src/assets/logo.jpeg" alt="Logo" />

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Card = () => {
   return (
-    <div className="md:flex justify-center items-center h-[60%] gap-8 p-6"> 
+    <div className="flex flex-col md:flex-row justify-center items-center h-[60%] md:gap-8 gap-y-6 p-6"> 
 
       {[
         { id: "dsa", title: "DSA Quiz", duration: "60 minutes", questions: 20, image: "src/assets/ds.jpg" },
@@ -12,7 +12,7 @@ const Card = () => {
       ].map((quiz, index) => (
         <div
           key={index}
-          className="w-full md:w-1/4 h-[500px] flex flex-col bg-white bg-opacity-30 p-6 rounded-3xl shadow-lg transition duration-500 hover:scale-105 backdrop-blur-md border border-gray-300"
+          className="w-full md:w-1/2 h-[500px] flex flex-col bg-white bg-opacity-30 p-6 rounded-3xl shadow-lg transition duration-500 hover:scale-105 backdrop-blur-md border border-gray-300"
         >
           
           <div className="h-[60%] rounded-2xl overflow-hidden">
@@ -20,13 +20,12 @@ const Card = () => {
           </div>
 
           <div className="w-full h-[20%] flex justify-center items-center mt-4">
-            <h1 className="text-4xl font-bold text-black tracking-wide">{quiz.title}</h1> {/* Darkest text color */}
+            <h1 className="text-4xl font-bold text-white tracking-wide">{quiz.title}</h1> {/* Text color changed to white */}
           </div>
 
-          {/* Adjusted margin to move the duration and questions text upwards */}
           <div className="w-full h-[15%] text-center mt-2 space-y-1 mb-4">
-            <h2 className="text-lg font-semibold text-gray-900">Duration: {quiz.duration}</h2> {/* Dark text color */}
-            <h2 className="text-lg font-semibold text-gray-900">Questions: {quiz.questions}</h2> {/* Dark text color */}
+            <h2 className="text-lg font-semibold text-white">Duration: {quiz.duration}</h2> {/* Text color changed to white */}
+            <h2 className="text-lg font-semibold text-white">Questions: {quiz.questions}</h2> {/* Text color changed to white */}
           </div>
 
           <div className="flex justify-center items-center">

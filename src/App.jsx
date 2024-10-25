@@ -6,6 +6,7 @@ import Intro from './components/Intro';
 import DSA from './pages/dsa';
 import OOP from './pages/oop'; 
 import BCN from './pages/bcn'; 
+import Footer from './components/Footer';
 const App = () => {
   const location = useLocation();
 
@@ -22,7 +23,7 @@ const App = () => {
         <Route path='/oop' element={<OOP />} /> 
         <Route path='/bcn' element={<BCN />} />
       </Routes>
-      
+      {location.pathname === '/' && <Footer />}
     </>
   );
 };
