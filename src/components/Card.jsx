@@ -23,12 +23,13 @@ const Card = () => {
             <h1 className="text-4xl font-bold text-black tracking-wide">{quiz.title}</h1> {/* Darkest text color */}
           </div>
 
-          <div className="w-full h-[10%] text-center mt-2 space-y-1">
-            <h2 className="text-lg font-semibold text-gray-900">Duration: {quiz.duration}</h2> {/* Darker text color */}
-            <h2 className="text-lg font-semibold text-gray-900">Questions: {quiz.questions}</h2> {/* Darker text color */}
+          {/* Adjusted margin to move the duration and questions text upwards */}
+          <div className="w-full h-[15%] text-center mt-2 space-y-1 mb-4">
+            <h2 className="text-lg font-semibold text-gray-900">Duration: {quiz.duration}</h2> {/* Dark text color */}
+            <h2 className="text-lg font-semibold text-gray-900">Questions: {quiz.questions}</h2> {/* Dark text color */}
           </div>
 
-          <div className="flex justify-center items-center mt-4">
+          <div className="flex justify-center items-center">
             <Link
               to={`/${quiz.id}`}
               className="bg-sky-500 text-white font-semibold px-5 py-3 rounded-full hover:bg-sky-600 transition duration-300 shadow-md hover:shadow-lg"

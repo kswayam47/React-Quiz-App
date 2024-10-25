@@ -3,9 +3,9 @@ import React from 'react';
 const Header = () => {
   return (
     <>
-      <nav className="flex justify-between items-center w-full p-4 shadow-lg" 
+      <nav className="flex justify-between items-center w-full p-4 " 
            style={{
-             background: 'linear-gradient(to right, #2C7744, #5A3F37)',
+             background: 'linear-gradient(90deg, #064635, #4F091D)',
            }}>
         <div className="flex items-center space-x-2">
           <img className="h-12 w-12 rounded-full" src="src/assets/logo.jpeg" alt="Logo" />
