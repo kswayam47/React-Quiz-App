@@ -66,39 +66,36 @@ const OOP = () => {
     return (
       <div className='flex justify-center items-center h-screen'>
         {!quizFinished ? (
-          <div className='w-[90%] md:w-[50%] h-[15%] flex flex-col relative'>
-            <h1 className='text-3xl font-extrabold text-center'>
-              Are you Ready to Test Your OOP Knowledge?
-            </h1>
-            <div className='flex justify-center mt-4'>
-              <button
-                className='border-2 border-blue-500 bg-amber-600 p-4'
-                onClick={loadQuiz}
-              >
+          <div className='w-[50%] h-[15%] flex-col relative'>
+            <div>
+              <h1 className='text-3xl font-extrabold text-center'>Are you Ready to Test Your OOP Knowledge?</h1>
+            </div>
+            <div className='absolute bottom-0 left-[40%]'>
+              <button className='border-2 border-blue-500 bg-amber-600 p-4' onClick={loadQuiz}>
                 <h1 className='font-extrabold'>LET'S BEGIN</h1>
               </button>
             </div>
           </div>
         ) : (
-          <div className='flex justify-center items-center flex-col w-[90%] md:w-[50%]'>
-            <h2 className='text-4xl font-bold text-gray-800 mb-4'>Quiz Finished!</h2>
-            <div className='w-full p-6 border-4 border-indigo-500 rounded-lg bg-gray-100 shadow-lg'>
-              <h3 className='text-3xl font-extrabold mb-4 text-blue-600'>Your Results</h3>
-              <div className='mb-2'>
-                <p className='text-xl font-bold'>Correct Answers: <span className='text-green-600'>{score}</span></p>
-              </div>
-              <div className='mb-2'>
-                <p className='text-xl font-bold'>Incorrect Answers: <span className='text-red-600'>{wrong}</span></p>
-              </div>
-              <div className='mb-2'>
-                <p className='text-xl font-bold'>Not Answered: <span className='text-yellow-600'>{noAnswer}</span></p>
-              </div>
-              <div className='mt-4'>
-                <h4 className='text-2xl font-bold'>Total Score: <span className='text-indigo-600'>{score} / {quizData.length}</span></h4>
+            <div className='flex justify-center items-center flex-col w-[50%]'>
+              <h2 className='text-4xl font-bold text-gray-800 mb-4'>Quiz Finished!</h2>
+              <div className='w-[50%] p-6 border-4 border-indigo-500 rounded-lg bg-gray-100 shadow-lg'>
+                <h3 className='text-3xl font-extrabold mb-4 text-blue-600'>Your Results</h3>
+                <div className='mb-2'>
+                  <p className='text-xl font-bold'>Correct Answers: <span className='text-green-600'>{score}</span></p>
+                </div>
+                <div className='mb-2'>
+                  <p className='text-xl font-bold'>Incorrect Answers: <span className='text-red-600'>{wrong}</span></p>
+                </div>
+                <div className='mb-2'>
+                  <p className='text-xl font-bold'>Not Answered: <span className='text-yellow-600'>{noAnswer}</span></p>
+                </div>
+                <div className='mt-4'>
+                  <h4 className='text-2xl font-bold'>Total Score: <span className='text-indigo-600'>{score} / {quizData.length}</span></h4>
+                </div>
               </div>
             </div>
-          </div>
-        )}
+          )}
       </div>
     );
   }
@@ -112,6 +109,7 @@ const OOP = () => {
     );
   }
 
+  // Check if quizData is loaded before rendering
   if (!quizData || quizData.length === 0) {
     return <div className='flex justify-center items-center h-screen'>No quiz data available.</div>;
   }
@@ -121,21 +119,17 @@ const OOP = () => {
       <div className='text-right text-2xl mb-4'>
         Time Left: {Math.floor(timeLeft / 60)}:{String(timeLeft % 60).padStart(2, '0')}
       </div>
-      <div className='flex justify-center'>
-        <QuestionCard
-          question={quizData[qIndex]} 
-          selectedOpt={selectedOpt}
-          setSelectedOpt={setSelectedOpt}
-        />
-      </div>
-      <div className='flex justify-center mt-4'>
-        <button 
-          onClick={submitAnswer} 
-          className='border-red-200 border-2 bg-cyan-600 p-5 rounded-md text-xl'
-        >
-          <h1 className='font-extrabold text-white'>Submit</h1>
-        </button>
-      </div>
+      <QuestionCard
+        question={quizData[qIndex]} // Ensure quizData and qIndex are valid
+        selectedOpt={selectedOpt}
+        setSelectedOpt={setSelectedOpt}
+      />
+      <button 
+        onClick={submitAnswer} 
+        className='border-red-200 border-2 bg-cyan-600 absolute top-[80%] left-[47%] p-5 rounded-md text-xl'
+      >
+        <h1 className='font-extrabold text-white'>Submit</h1>
+      </button>
     </div>
   );
 };
