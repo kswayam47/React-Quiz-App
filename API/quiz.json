@@ -4,121 +4,121 @@
         "id": 1,
         "question": "What is the time complexity of binary search?",
         "options": ["O(n)", "O(log n)", "O(n^2)", "O(1)"],
-        "correctAnswer": 1
+        "correctAnswer": 2
       },
       {
         "id": 2,
         "question": "Which data structure uses LIFO (Last In, First Out)?",
         "options": ["Queue", "Stack", "Array", "Heap"],
-        "correctAnswer": 1
+        "correctAnswer": 2
       },
       {
         "id": 3,
         "question": "Which sorting algorithm has the best average case time complexity?",
         "options": ["Quick Sort", "Bubble Sort", "Merge Sort", "Selection Sort"],
-        "correctAnswer": 2
+        "correctAnswer": 3
       },
       {
         "id": 4,
         "question": "What is the space complexity of an adjacency matrix for a graph with n nodes?",
         "options": ["O(n)", "O(n^2)", "O(log n)", "O(n log n)"],
-        "correctAnswer": 1
+        "correctAnswer": 2
       },
       {
         "id": 5,
         "question": "Which of the following is not a divide and conquer algorithm?",
         "options": ["Merge Sort", "Quick Sort", "Binary Search", "Bubble Sort"],
-        "correctAnswer": 3
+        "correctAnswer": 4
       },
       {
         "id": 6,
         "question": "Which data structure is used in the implementation of a recursive function?",
         "options": ["Stack", "Queue", "Array", "Linked List"],
-        "correctAnswer": 0
+        "correctAnswer": 1
       },
       {
         "id": 7,
         "question": "In an undirected graph, what is the sum of the degrees of all vertices?",
         "options": ["Equal to the number of edges", "Twice the number of edges", "Half the number of edges", "Equal to the number of vertices"],
-        "correctAnswer": 1
+        "correctAnswer": 2
       },
       {
         "id": 8,
         "question": "Which data structure allows both FIFO and LIFO operations?",
         "options": ["Queue", "Deque", "Stack", "Priority Queue"],
-        "correctAnswer": 1
+        "correctAnswer": 2
       },
       {
         "id": 9,
         "question": "Which algorithm is used to find the shortest path in a graph?",
         "options": ["Prim's Algorithm", "Dijkstra's Algorithm", "Kruskal's Algorithm", "DFS"],
-        "correctAnswer": 1
+        "correctAnswer": 2
       },
       {
         "id": 10,
         "question": "What is the worst-case time complexity of quicksort?",
         "options": ["O(n^2)", "O(n log n)", "O(log n)", "O(n)"],
-        "correctAnswer": 0
+        "correctAnswer": 1
       },
       {
         "id": 11,
         "question": "Which data structure is typically used in breadth-first search (BFS)?",
         "options": ["Stack", "Queue", "Priority Queue", "Set"],
-        "correctAnswer": 1
+        "correctAnswer": 2
       },
       {
         "id": 12,
         "question": "Which of the following is not a stable sorting algorithm?",
         "options": ["Merge Sort", "Quick Sort", "Bubble Sort", "Insertion Sort"],
-        "correctAnswer": 1
+        "correctAnswer": 2
       },
       {
         "id": 13,
         "question": "Which data structure is best suited for implementing a priority queue?",
         "options": ["Heap", "Stack", "Queue", "Tree"],
-        "correctAnswer": 0
+        "correctAnswer": 1
       },
       {
         "id": 14,
         "question": "What is the height of a balanced binary search tree with n nodes?",
         "options": ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
-        "correctAnswer": 1
+        "correctAnswer": 2
       },
       {
         "id": 15,
         "question": "Which of the following is a greedy algorithm?",
         "options": ["Bellman-Ford", "Floyd-Warshall", "Dijkstra", "Merge Sort"],
-        "correctAnswer": 2
+        "correctAnswer": 3
       },
       {
         "id": 16,
         "question": "Which data structure is used to implement a graph traversal algorithm like DFS?",
         "options": ["Stack", "Queue", "Heap", "Array"],
-        "correctAnswer": 0
+        "correctAnswer": 1
       },
       {
         "id": 17,
         "question": "What is the time complexity of inserting an element in a heap?",
         "options": ["O(1)", "O(n)", "O(log n)", "O(n^2)"],
-        "correctAnswer": 2
+        "correctAnswer": 3
       },
       {
         "id": 18,
         "question": "Which of the following algorithms uses a min-heap data structure?",
         "options": ["Prim's Algorithm", "Kruskal's Algorithm", "Floyd-Warshall Algorithm", "DFS"],
-        "correctAnswer": 0
+        "correctAnswer": 1
       },
       {
         "id": 19,
         "question": "Which sorting algorithm is the most efficient when the list is nearly sorted?",
         "options": ["Insertion Sort", "Merge Sort", "Quick Sort", "Heap Sort"],
-        "correctAnswer": 0
+        "correctAnswer": 1
       },
       {
         "id": 20,
         "question": "Which of the following data structures is the most suitable for implementing a LRU cache?",
         "options": ["Stack", "Queue", "Deque", "Linked HashMap"],
-        "correctAnswer": 3
+        "correctAnswer": 4
       }
     ]
   }

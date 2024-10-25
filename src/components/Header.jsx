@@ -4,7 +4,10 @@ const Header = () => {
   return (
     <>
       <nav className="flex justify-between items-center w-full bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 p-4 shadow-lg">
-        <img className="h-12 w-12 rounded-full" src="src/assets/logo.jpeg" alt="Logo" />
+        <div className="flex items-center space-x-2">
+          <img className="h-12 w-12 rounded-full" src="src/assets/logo.jpeg" alt="Logo" />
+          <span className="text-white text-2xl font-bold">ReactIQ</span>
+        </div>
         
         <div className="flex space-x-8 text-white text-lg font-semibold">
           <a href="/" className="hover:text-amber-400 transition duration-300 ease-in-out">Home</a>

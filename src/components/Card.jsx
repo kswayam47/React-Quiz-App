@@ -1,60 +1,45 @@
-
 import React from 'react';
-import { Link } from 'react-router-dom'; 
+import { Link } from 'react-router-dom';
 
 const Card = () => {
   return (
-    <div className=" md:flex justify-center items-center h-[60%] justify-around"> 
-      
-      <div className=" ml-6 w-[90%] md:w-1/4 h-full flex flex-col bg-white p-4 rounded-3xl  "> 
-        <div className="h-[60%]">
-          <img src="src/assets/ds.jpg" alt="Quiz Illustration" className="w-full h-full object-cover mb-4 rounded-xl" /> 
-        </div>
-        <div className="w-full h-[20%] justify-center items-center flex">
-          <h1 className="text-lg font-bold mb-2 text-3xl">DSA Quiz</h1> 
-        </div>
-        <div className="w-full h-[10%] mb-4 text-center">
-          <h1 className="text-xl font-bold">Duration: 60 minutes</h1>
-          <h1 className="text-xl font-bold">Questions: 20</h1>
-        </div>
-        <div className="flex justify-center items-center">
-          <Link to="/dsa" className="bg-sky-500 text-white p-2 rounded hover:bg-sky-700">Proceed</Link> 
-        </div>
-      </div>
+    <div className="md:flex justify-center items-center h-[60%] gap-8 p-6"> 
 
-      
-      <div className=" ml-6 my-6 w-[90%] md:w-1/4 h-full flex flex-col bg-white p-4 rounded-3xl"> 
-        <div className="h-[60%]">
-          <img src="src/assets/oop.jpeg" alt="Quiz Illustration" className="w-full h-full object-cover mb-4 rounded-xl" /> 
-        </div>
-        <div className="w-full h-[20%] justify-center items-center flex">
-          <h1 className="text-lg font-bold mb-2 text-3xl">OOP Quiz</h1> 
-        </div>
-        <div className="w-full h-[10%] mb-4 text-center">
-          <h1 className="text-xl font-bold">Duration: 15 minutes</h1>
-          <h1 className="text-xl font-bold">Questions: 15</h1>
-        </div>
-        <div className="flex justify-center items-center">
-          <Link to="/oop" className="bg-sky-500 text-white p-2 rounded hover:bg-sky-700">Proceed</Link>
-        </div>
-      </div>
+      {[
+        { id: "dsa", title: "DSA Quiz", duration: "60 minutes", questions: 20, image: "src/assets/ds.jpg" },
+        { id: "oop", title: "OOP Quiz", duration: "15 minutes", questions: 15, image: "src/assets/oop.jpeg" },
+        { id: "bcn", title: "BCN Quiz", duration: "30 minutes", questions: 5, image: "src/assets/bcn.jpeg" },
+      ].map((quiz, index) => (
+        <div
+          key={index}
+          className="w-full md:w-1/4 h-[500px] transform transition duration-500 hover:scale-105 flex flex-col bg-gradient-to-br from-white via-gray-50 to-gray-200 p-6 rounded-3xl shadow-lg hover:shadow-indigo-500/50 hover:ring-4 hover:ring-indigo-200/50" // Added ring glow effect
+        >
+          
+          <div className="h-[60%] rounded-2xl overflow-hidden">
+            <img src={quiz.image} alt={`${quiz.title} Illustration`} className="w-full h-full object-cover transition duration-500 hover:opacity-90" /> 
+          </div>
 
- 
-      <div className=" ml-6 w-[90%]   md:w-1/4 h-full flex flex-col bg-white p-4 rounded-3xl"> 
-        <div className="h-[60%]">
-          <img src="src/assets/bcn.jpeg" alt="Quiz Illustration" className="w-full h-full object-cover mb-4 rounded-xl" /> 
+          <div className="w-full h-[20%] flex justify-center items-center mt-4">
+            <h1 className="text-3xl font-bold text-gray-800 tracking-wide">{quiz.title}</h1> 
+          </div>
+
+          <div className="w-full h-[10%] text-center mt-2 space-y-1">
+            <h2 className="text-lg font-semibold text-gray-600">Duration: {quiz.duration}</h2>
+            <h2 className="text-lg font-semibold text-gray-600">Questions: {quiz.questions}</h2>
+          </div>
+
+          <div className="flex justify-center items-center mt-4">
+            <Link
+              to={`/${quiz.id}`}
+              className="bg-sky-500 text-white font-semibold px-5 py-3 rounded-full hover:bg-sky-600 transition duration-300 shadow-md hover:shadow-lg hover:shadow-sky-300 glow-effect" // Added glow effect on hover
+            >
+              Proceed
+            </Link>
+          </div>
+
         </div>
-        <div className="w-full h-[20%] justify-center items-center flex">
-          <h1 className="text-lg font-bold mb-2 text-3xl">BCN Quiz</h1>
-        </div>
-        <div className="w-full h-[10%] mb-4 text-center">
-          <h1 className="text-xl font-bold">Duration: 30 minutes</h1>
-          <h1 className="text-xl font-bold">Questions: 5</h1>
-        </div>
-        <div className="flex justify-center items-center">
-          <Link to="/bcn" className="bg-sky-500 text-white p-2 rounded hover:bg-sky-700">Proceed</Link>
-        </div>
-      </div>
+      ))}
+
     </div>
   );
 };
