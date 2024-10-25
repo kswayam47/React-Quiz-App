@@ -1,0 +1,95 @@
+{
+    "data": [
+      {
+        "id": 1,
+        "question": "Which of the following best describes polymorphism in OOP?",
+        "options": ["Multiple methods with the same name but different signatures", "Restricting access to class members", "Creating objects from a parent class", "The ability of objects to take many forms"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 2,
+        "question": "In C++, what is the main reason for using virtual functions?",
+        "options": ["To achieve inheritance", "To allow function overloading", "To enable runtime polymorphism", "To avoid function overriding"],
+        "correctAnswer": 2
+      },
+      {
+        "id": 3,
+        "question": "Which of the following statements about abstract classes is true?",
+        "options": ["They cannot have any methods", "They can be instantiated", "They can have both abstract and concrete methods", "They do not support inheritance"],
+        "correctAnswer": 2
+      },
+      {
+        "id": 4,
+        "question": "What is the output of the following code in C++ if the class does not use a virtual destructor?",
+        "options": ["Correct object destruction", "Memory leak", "Double deletion", "Compile-time error"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 5,
+        "question": "Which of the following is true regarding multiple inheritance in C++?",
+        "options": ["It is not allowed", "It is allowed but requires resolving ambiguity", "It is only allowed in certain circumstances", "It is always ambiguous and cannot be used"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 6,
+        "question": "In OOP, what is the 'diamond problem'?",
+        "options": ["An issue with inheritance when two classes derive from the same parent class", "A problem related to multiple inheritance", "A complication in method overloading", "An error when using abstract classes"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 7,
+        "question": "How can method overriding be prevented in Java?",
+        "options": ["By declaring the method as static", "By declaring the method as final", "By declaring the method as private", "By using an interface"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 8,
+        "question": "What is the Liskov Substitution Principle in SOLID OOP design?",
+        "options": ["Objects in a program should be replaceable with instances of their subtypes", "A class should have only one responsibility", "Methods that use references to base classes must be able to use objects of derived classes", "None of the above"],
+        "correctAnswer": 0
+      },
+      {
+        "id": 9,
+        "question": "Which of the following allows a class to have more than one method with the same name but different parameters?",
+        "options": ["Method overriding", "Constructor chaining", "Method overloading", "Encapsulation"],
+        "correctAnswer": 2
+      },
+      {
+        "id": 10,
+        "question": "Which feature of OOP restricts direct access to certain class members?",
+        "options": ["Polymorphism", "Abstraction", "Inheritance", "Encapsulation"],
+        "correctAnswer": 3
+      },
+      {
+        "id": 11,
+        "question": "In OOP, what is the benefit of using interfaces?",
+        "options": ["To avoid multiple inheritance", "To allow multiple class inheritance", "To allow code reusability", "To enforce method signatures in child classes"],
+        "correctAnswer": 3
+      },
+      {
+        "id": 12,
+        "question": "What is true about static methods in Java?",
+        "options": ["They can access instance variables", "They belong to the class rather than any object", "They can only be used with abstract classes", "They cannot be overloaded"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 13,
+        "question": "Which of the following is NOT a feature of polymorphism in C++?",
+        "options": ["Compile-time method resolution", "Runtime method resolution", "Template metaprogramming", "Operator overloading"],
+        "correctAnswer": 2
+      },
+      {
+        "id": 14,
+        "question": "In Java, what will happen if you try to override a private method?",
+        "options": ["It will compile but hide the method", "It will result in a compilation error", "It will override the method successfully", "None of the above"],
+        "correctAnswer": 0
+      },
+      {
+        "id": 15,
+        "question": "How can a class prevent itself from being extended in Java?",
+        "options": ["By using the 'abstract' keyword", "By using the 'final' keyword", "By not implementing any interfaces", "By using a private constructor"],
+        "correctAnswer": 1
+      }
+    ]
+  }
+  

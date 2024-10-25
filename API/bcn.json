@@ -1,0 +1,35 @@
+{
+    "data": [
+      {
+        "id": 1,
+        "question": "What does BCN stand for in computer networks?",
+        "options": ["Basic Communication Network", "Broadband Communication Network", "Backbone Communication Network", "Bridge Communication Network"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 2,
+        "question": "Which layer in the OSI model is responsible for routing?",
+        "options": ["Physical Layer", "Network Layer", "Transport Layer", "Data Link Layer"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "question": "Which protocol is used to assign IP addresses automatically in a network?",
+        "options": ["TCP", "UDP", "DHCP", "HTTP"],
+        "correctAnswer": 2
+      },
+      {
+        "id": 4,
+        "question": "What is the primary function of a router?",
+        "options": ["Forwarding data packets between networks", "Managing network security", "Assigning IP addresses", "Monitoring network traffic"],
+        "correctAnswer": 0
+      },
+      {
+        "id": 5,
+        "question": "Which of the following is used to establish a virtual circuit in a network?",
+        "options": ["TCP", "UDP", "HTTP", "FTP"],
+        "correctAnswer": 0
+      }
+    ]
+  }
+  
