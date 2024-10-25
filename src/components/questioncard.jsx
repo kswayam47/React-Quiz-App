@@ -2,14 +2,11 @@ import React from 'react';
 
 const QuestionCard = ({ question, selectedOpt, setSelectedOpt }) => {
   return (
-    <div className='p-3 my-4 border-2 border-blue-500 absolute md:h-[50%] md:w-[60%] top-[25%] right-[20%] bg-white flex flex-col justify-center items-center rounded-3xl sm:w-[90%] sm:max-w-[90%] sm:h-auto sm:flex sm:flex-col sm:justify-center sm:items-center '>
+    <div className='p-3 my-4 border-2 border-blue-500 absolute md:h-[50%] md:w-[60%] top-[25%] right-[20%] bg-white flex flex-col justify-center items-center rounded-3xl sm:w-[90%] sm:max-w-[90%] sm:h-auto sm:flex sm:flex-col sm:justify-center sm:items-center'>
       <h2 className='font-bold text-3xl my-6 text-center'>{question.question}</h2>
       <ul className='w-full flex flex-col justify-center items-center'>
         {question.options.map((option, idx) => (
-          <li 
-            key={idx} 
-            className='w-full my-2 flex justify-center items-center'
-          >
+          <li key={idx} className='w-full my-2 flex justify-center items-center'>
             <input
               type='radio'
               id={`option-${idx}`}
@@ -19,10 +16,7 @@ const QuestionCard = ({ question, selectedOpt, setSelectedOpt }) => {
               onChange={() => setSelectedOpt(idx)}
               className='appearance-none w-6 h-6 rounded-full border-2 border-gray-400 checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition-all duration-300 mr-4'
             />
-            <label
-              htmlFor={`option-${idx}`}
-              className='cursor-pointer text-2xl'
-            >
+            <label htmlFor={`option-${idx}`} className='cursor-pointer text-2xl'>
               {option}
             </label>
           </li>
