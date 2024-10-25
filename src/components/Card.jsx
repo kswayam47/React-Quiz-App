@@ -12,7 +12,7 @@ const Card = () => {
       ].map((quiz, index) => (
         <div
           key={index}
-          className="w-full md:w-1/4 h-[500px] transform transition duration-500 hover:scale-105 flex flex-col bg-gradient-to-br from-white via-gray-50 to-gray-200 p-6 rounded-3xl shadow-lg hover:shadow-indigo-500/50 hover:ring-4 hover:ring-indigo-200/50" // Added ring glow effect
+          className="w-full md:w-1/4 h-[500px] flex flex-col bg-white bg-opacity-30 p-6 rounded-3xl shadow-lg transition duration-500 hover:scale-105 backdrop-blur-md border border-gray-300"
         >
           
           <div className="h-[60%] rounded-2xl overflow-hidden">
@@ -20,18 +20,18 @@ const Card = () => {
           </div>
 
           <div className="w-full h-[20%] flex justify-center items-center mt-4">
-            <h1 className="text-3xl font-bold text-gray-800 tracking-wide">{quiz.title}</h1> 
+            <h1 className="text-4xl font-bold text-black tracking-wide">{quiz.title}</h1> {/* Darkest text color */}
           </div>
 
           <div className="w-full h-[10%] text-center mt-2 space-y-1">
-            <h2 className="text-lg font-semibold text-gray-600">Duration: {quiz.duration}</h2>
-            <h2 className="text-lg font-semibold text-gray-600">Questions: {quiz.questions}</h2>
+            <h2 className="text-lg font-semibold text-gray-900">Duration: {quiz.duration}</h2> {/* Darker text color */}
+            <h2 className="text-lg font-semibold text-gray-900">Questions: {quiz.questions}</h2> {/* Darker text color */}
           </div>
 
           <div className="flex justify-center items-center mt-4">
             <Link
               to={`/${quiz.id}`}
-              className="bg-sky-500 text-white font-semibold px-5 py-3 rounded-full hover:bg-sky-600 transition duration-300 shadow-md hover:shadow-lg hover:shadow-sky-300 glow-effect" // Added glow effect on hover
+              className="bg-sky-500 text-white font-semibold px-5 py-3 rounded-full hover:bg-sky-600 transition duration-300 shadow-md hover:shadow-lg"
             >
               Proceed
             </Link>

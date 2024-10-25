@@ -3,7 +3,10 @@ import React from 'react';
 const Header = () => {
   return (
     <>
-      <nav className="flex justify-between items-center w-full bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 p-4 shadow-lg">
+      <nav className="flex justify-between items-center w-full p-4 shadow-lg" 
+           style={{
+             background: 'linear-gradient(to right, #2C7744, #5A3F37)',
+           }}>
         <div className="flex items-center space-x-2">
           <img className="h-12 w-12 rounded-full" src="src/assets/logo.jpeg" alt="Logo" />
           <span className="text-white text-2xl font-bold">ReactIQ</span>

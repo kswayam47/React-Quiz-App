@@ -68,7 +68,7 @@ const OOP = () => {
         {!quizFinished ? (
           <div className='w-[50%] h-[15%] flex-col relative'>
             <div>
-              <h1 className='text-3xl font-extrabold text-center'>Are you Ready to Test Your OOP Knowledge?</h1>
+              <h1 className='text-3xl font-extrabold text-center text-white'>Are you Ready to Test Your OOP Knowledge?</h1>
             </div>
             <div className='absolute bottom-0 left-[40%]'>
               <button className='border-2 border-blue-500 bg-amber-600 p-4' onClick={loadQuiz}>
@@ -78,7 +78,7 @@ const OOP = () => {
           </div>
         ) : (
             <div className='flex justify-center items-center flex-col w-[50%]'>
-              <h2 className='text-4xl font-bold text-gray-800 mb-4'>Quiz Finished!</h2>
+              <h2 className='text-4xl font-bold text-white mb-4'>Quiz Finished!</h2>
               <div className='w-[50%] p-6 border-4 border-indigo-500 rounded-lg bg-gray-100 shadow-lg'>
                 <h3 className='text-3xl font-extrabold mb-4 text-blue-600'>Your Results</h3>
                 <div className='mb-2'>
@@ -115,8 +115,8 @@ const OOP = () => {
   }
 
   return (
-    <div className='p-4 border-2 border-blue-500 h-full'>
-      <div className='text-right text-2xl mb-4'>
+    <div className='p-4   h-full'>
+      <div className='text-right text-white font-bold text-2xl mb-4'>
         Time Left: {Math.floor(timeLeft / 60)}:{String(timeLeft % 60).padStart(2, '0')}
       </div>
       <QuestionCard
