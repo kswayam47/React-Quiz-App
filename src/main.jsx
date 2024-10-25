@@ -7,7 +7,7 @@ import Header from './components/Header.jsx'
 import { BrowserRouter } from 'react-router-dom'
 
 createRoot(document.getElementById('root')).render(
-     <BrowserRouter>
+     <BrowserRouter basename="/React-Quiz-App">
     <App /> 
     </BrowserRouter>
 
