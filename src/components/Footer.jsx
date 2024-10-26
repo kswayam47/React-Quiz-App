@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="linear-gradient(135deg, #12032d, #000000); text-white py-8">
       <div className="container mx-auto text-center">
-        <h2 className="text-2xl font-bold mb-4">Quiz Developer Kswayam47</h2>
+        <h2 className="text-2xl font-bold mb-4">Quiz Developer-Kswayam47</h2>
         <p className="mb-4">Your one-stop destination for interactive quizzes!</p>
         
         <div className="flex justify-center space-x-6 mb-4">
@@ -23,7 +23,7 @@ const Footer = () => {
           </a>
         </div>
         
-        <p className="text-sm">© 2024 Quiz Developer KSwayam47. All rights reserved.</p>
+        <p className="text-sm">© 2024 All rights reserved.</p>
       </div>
     </footer>
   );

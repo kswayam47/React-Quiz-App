@@ -20,12 +20,17 @@ const Card = () => {
           </div>
 
           <div className="w-full h-[20%] flex justify-center items-center mt-4">
-            <h1 className="text-4xl font-bold text-white tracking-wide">{quiz.title}</h1> {/* Text color changed to white */}
+            <h1 className="text-4xl font-bold tracking-wide text-rose-950 relative">
+              <span className="relative z-10">{quiz.title}</span>
+              <span className="absolute inset-0 blur-sm text-rose-800 opacity-80 transition duration-500 ease-in-out hover:opacity-100 hover:blur-md">
+                {quiz.title}
+              </span>
+            </h1>
           </div>
 
           <div className="w-full h-[15%] text-center mt-2 space-y-1 mb-4">
-            <h2 className="text-lg font-semibold text-white">Duration: {quiz.duration}</h2> {/* Text color changed to white */}
-            <h2 className="text-lg font-semibold text-white">Questions: {quiz.questions}</h2> {/* Text color changed to white */}
+            <h2 className="text-lg font-bold text-black">Duration: {quiz.duration}</h2>
+            <h2 className="text-lg font-bold text-black">Questions: {quiz.questions}</h2>
           </div>
 
           <div className="flex justify-center items-center">
